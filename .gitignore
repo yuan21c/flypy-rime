@@ -11,6 +11,9 @@ user.yaml
 installation.yaml
 *.custom.yaml
 
+# VSCode
+.vscode/
+
 # Windows
 Thumbs.db
 ehthumbs.db
