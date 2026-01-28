@@ -1,0 +1,36 @@
+# Rime specific files
+*.log
+*.bin
+*.userdb/*
+!.gitignore
+build/
+trash/
+
+# User specific configurations
+user.yaml
+installation.yaml
+*.custom.yaml
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Icon?
+!Icon?/
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.#*
+%.tmp
+%.bak
