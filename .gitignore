@@ -1,9 +1,8 @@
 # Rime specific files
 *.log
-*.bin
 *.userdb/*
 !.gitignore
-build/
+build/*.yaml
 trash/
 
 # VSCode
