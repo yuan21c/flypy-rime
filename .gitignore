@@ -6,11 +6,6 @@
 build/
 trash/
 
-# User specific configurations
-user.yaml
-installation.yaml
-*.custom.yaml
-
 # VSCode
 .vscode/
 
