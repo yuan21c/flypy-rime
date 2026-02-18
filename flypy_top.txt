@@ -20,3 +20,11 @@
 
 接收	jpuz
 接入	jpru
+线程	xmig
+多线程	dxi
+多线程	dxig
+解耦	jpou
+命令行	mlh
+发行版	fxb
+发行版	fxbj
+零基础	ljiu
