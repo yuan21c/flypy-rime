@@ -4,36 +4,93 @@ customization:
   generator: "squirrel::UIStyleSettings"
   modified_time: "2019-06-23"
   rime_version: 1.5.3
-# patch:
-#   "preset_color_schemes/metro": 
-#     author: "flypy.com"
-#     back_color: 0xffffff                    # 候选条背景色
-#     border_color_width: 1
-#     #border_color: 0xe89f00                  # 边框色
-#     #preedit_back_color: 0xf0403516   #新增，未知其意
-#     border_height: 8                        # 窗口边界高度，大于圆角半径才生效
-#     border_width: 8                         # 窗口边界宽度，大于圆角半径才生效
-#     candidate_format: "%c\u2005%@\u2005"          # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
-#     corner_radius: 6                        # 窗口圆角半径
-#     #hilited_corner_radius: 6                # 高亮圆角
-#     hilited_text_color: 0x000000            # 编码高亮
-#     hilited_back_color: 0xffffff            # 编码背景高亮
-#     hilited_candidate_label_color: 0xeeeeee # 首选编号色
-#     hilited_candidate_text_color: 0xffffff  # 首选文字色
-#     hilited_candidate_back_color: 0xe89f00  # 首选背景色
-#     hilited_comment_text_color: 0xcccccc    # 首选提示字母色
-#     label_color: 0x555555                             # 次选编号色
-#     candidate_text_color: 0x000000                    # 次选文字色
-#     candidate_back_color: 0xffffff                    # 次选背景色
-#     comment_text_color: 0x555555                      # 次选提示字母色
-#     candidate_list_layout: linear
-#     font_point: 18                          # 候选窗文字字号
-#     label_font_point: 14                    # 候选窗编号字号
-#     inline_preedit: true                    # 开启嵌入编码
-#     name: "metro"
-#     text_color: 0x333333                    # 编码行文字颜色，24位色值，16进制，BGR顺序
-#     text_orientation: horizontal
-#   "style/line_spacing": 12                  # 候选词的行间距
-#   "style/color_scheme": metro
-#   "style/display_tray_icon": false
-  
+patch:
+  __include: "hot_keys:/patch"
+  preset_color_schemes:
+    dark_green:
+      {
+        author: yuan21c,
+        back_color: 0x434A31,
+        candidate_text_color: 0xC1E8F8,
+        comment_text_color: 0xC1E8F8,
+        hilited_back_color: "",
+        hilited_candidate_back_color: 0x434A31,
+        hilited_candidate_label_color: 0x16CBFC,
+        hilited_candidate_text_color: 0x16CBFC,
+        hilited_comment_text_color: 0x16CBFC,
+        hilited_text_color: 0x16CBFC,
+        label_color: 0xC1E8F8,
+        name: "東篱/Dark Green",
+        text_color: 0x16CBFC,
+      }
+    mint_dark_blue:
+      {
+        alpha: 1,
+        author: 'Mintimate <"Mintimate''s Blog">',
+        back_color: 0x424242,
+        base_offset: 0,
+        candidate_text_color: 0xefefef,
+        comment_text_color: 0xefefef,
+        hilited_candidate_back_color: 0xc6c01a,
+        hilited_candidate_label_color: 0xefefef,
+        hilited_candidate_text_color: 0xefefef,
+        hilited_comment_text_color: 0xffffff,
+        hilited_text_color: 0xc6c01a,
+        label_color: 0xefefef,
+        line_spacing: 5,
+        mutual_exclusive: false,
+        name: "黑水鸭／Mint Dark Blue",
+        shadow_size: 0,
+        spacing: 10,
+        text_color: 0x6495ed,
+        translucency: false,
+      }
+    mint_light_blue:
+      {
+        alpha: 1,
+        author: 'Mintimate <"Mintimate''s Blog">',
+        back_color: 0xefefef,
+        base_offset: 0,
+        candidate_text_color: 0x424242,
+        comment_text_color: 0xcac9c8,
+        hilited_candidate_back_color: 0xed9564,
+        hilited_candidate_label_color: 0xefefef,
+        hilited_candidate_text_color: 0xefefef,
+        hilited_comment_text_color: 0xefefef,
+        hilited_text_color: 0xed9564,
+        label_color: 0xcac9c8,
+        line_spacing: 5,
+        mutual_exclusive: false,
+        name: "蓝水鸭／Mint Light Blue",
+        shadow_size: 0,
+        spacing: 10,
+        text_color: 0x6495ed,
+        translucency: false,
+      }
+  style:
+    border_height: 0
+    border_width: 0
+    candidate_list_layout: stacked
+    color_scheme: mint_light_blue
+    color_scheme_dark: dark_green
+    color_space: srgb
+    comment_font_face: "字酷堂清楷 简繁, Yu Gothic UI"
+    comment_font_point: 22
+    font_face: "字酷堂清楷 简繁, Yu Gothic UI"
+    font_point: 22
+    hilited_corner_radius: 0
+    inline_preedit: true
+    label_font_face: "霞鹜文楷, Yu Gothic UI"
+    label_font_point: 18
+    label_format: "%s "
+    layout:
+      candidate_spacing: 0
+      corner_radius: 10
+      # hilite_padding: 2 # 高亮区域和内部文字的间距，影响高亮区域大小
+      hilite_padding_x: 10 # 高亮区域和内部文字的左右间距，如无特殊指定则依 hilite_padding 设置
+      hilite_padding_y: 2 # 高亮区域和内部文字的上下间距，如无特殊指定则依 hilite_padding 设置
+      margin_x: 10
+      margin_y: 10
+      min_width: 60
+      round_corner: 10
+      line_spacing: 5
